@@ -323,8 +323,7 @@ def open_trade(coin_id: str, symbol: str, action: str, entry_price: float) -> No
             "sl": sl,
             "opened_at": datetime.now(timezone.utc).isoformat(),
         }
-    log.info("[TRADE_OPEN] %s %s @ $%.6f | TP=$%.6f | SL=$%.6f",
-             action, symbol, entry_price, tp, sl)
+    log.info("[TRADE_OPEN] %s %s @ $%.6f", action, symbol, entry_price)
 
 def cleanup_old_trades(max_age_hours: int = 24) -> None:
     with trades_lock:
