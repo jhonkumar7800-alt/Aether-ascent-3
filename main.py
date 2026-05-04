@@ -30,7 +30,7 @@ RSI_OVERSOLD = 40
 RSI_OVERBOUGHT = 60
 RSI_PERIOD = 14
 MIN_CONFIDENCE = 65
-GROQ_MODEL = "llama3-8b-8192"
+GROQ_MODEL = "llama-3.3-70b-versatile"
 
 COINS = [
     "bitcoin",
